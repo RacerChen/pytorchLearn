@@ -1,5 +1,7 @@
 # pytorchLearn
-For pytorch learning
+Notes for learning **machine learning** with **pytorch**
+* Contains basic machine learning and mathematic knowledge.
+* Contains pytorch usage cases and explanations 
 
 ## 1_tensor_basic.py
 learn how to initialized tensor in pytorch
@@ -23,8 +25,21 @@ Linear Regression leaning in pytorch
 
 ## 6_logistic_regression.py
 Learning logistics regression in pytorch
+
 > logistics regression is similar with linear regression,
 > it adds a logistics function(sigmoid) to convert it to a classification task
+
+## 7_Dataset_Transforms
+Learning how to load dataset using dataloader
+
+## 8_Dataset_and_DataLoader
+Dataset Transform in Pytorch
+
+## 9_Softmax_and_Cross_Entropy
+Learning Softmax and Cross Entropy in Pytorch
+
+## 10_Activation_Function
+Learning activation function and its' utility in pytorch torch.nn and torch.nn.functional
 
 
 ## Tutorial Reference
