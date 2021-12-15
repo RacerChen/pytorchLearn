@@ -64,4 +64,45 @@ if __name__ == '__main__':
     # print(features.shape[0])
     # print(features, labels)
 
+    num_epochs = 2
+    total_samples = len(dataset)
+    n_iterations = math.ceil(total_samples/4)
+    print(total_samples, n_iterations)
+
+    for epoch in range(num_epochs):
+        for i, (inputs, labels) in enumerate(dataloader):
+            if i % 5 == 0:
+                print(f'epoch: {epoch+1}/{num_epochs}, step{i+1}/{n_iterations}, input {inputs.shape}')
+
+
+
+'''
+Console:
+178 45
+epoch: 1/2, step1/45, input torch.Size([4, 13])
+epoch: 1/2, step6/45, input torch.Size([4, 13])
+epoch: 1/2, step11/45, input torch.Size([4, 13])
+epoch: 1/2, step16/45, input torch.Size([4, 13])
+epoch: 1/2, step21/45, input torch.Size([4, 13])
+epoch: 1/2, step26/45, input torch.Size([4, 13])
+epoch: 1/2, step31/45, input torch.Size([4, 13])
+epoch: 1/2, step36/45, input torch.Size([4, 13])
+epoch: 1/2, step41/45, input torch.Size([4, 13])
+epoch: 2/2, step1/45, input torch.Size([4, 13])
+epoch: 2/2, step6/45, input torch.Size([4, 13])
+epoch: 2/2, step11/45, input torch.Size([4, 13])
+epoch: 2/2, step16/45, input torch.Size([4, 13])
+epoch: 2/2, step21/45, input torch.Size([4, 13])
+epoch: 2/2, step26/45, input torch.Size([4, 13])
+epoch: 2/2, step31/45, input torch.Size([4, 13])
+epoch: 2/2, step36/45, input torch.Size([4, 13])
+epoch: 2/2, step41/45, input torch.Size([4, 13])
+
+notes:
+2 epochs
+4 batch size
+178 total samples
+so
+ceil(178/4) = 45 iteration per epoch
+'''
 
