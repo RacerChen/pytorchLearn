@@ -41,6 +41,18 @@ Learning Softmax and Cross Entropy in Pytorch
 ## 10_Activation_Function
 Learning activation function and its' utility in pytorch torch.nn and torch.nn.functional
 
+## 11_Feed_Forward_Neural_Network
+Learning the DNN and let it learning on GPU
+
+## 12_TensorBoard
+Learning how to use TensorBoard to visualize training progress
+
+## 13_Saving_and_Loading_Models
+Learning ways to save and load models
+
+## 14_RNN
+Use rnn to do series processing task, use pytorch api of GRU and LSTM
+(comparing to RNN and GRU, LSTM needs extra cell state c0)
 
 ## Tutorial Reference
 [Youtube(Pytorch Tutorials-Complete Beginner Course) Author.Python Engineer](https://www.youtube.com/playlist?list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4)
