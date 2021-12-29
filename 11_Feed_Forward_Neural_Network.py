@@ -24,6 +24,9 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f'device:{device}')
 
+# Using CPU
+# device = torch.device('cpu')
+
 # hyper parameters
 input_size = 784  # 28x28
 hidden_size = 100
@@ -66,7 +69,7 @@ class NeuralNet(nn.Module):
         return out
 
 
-model = NeuralNet(input_size, hidden_size, num_classes)
+model = NeuralNet(input_size, hidden_size, num_classes).to(device)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
