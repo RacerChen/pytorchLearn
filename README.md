@@ -54,5 +54,8 @@ Learning ways to save and load models
 Use rnn to do series processing task, use pytorch api of GRU and LSTM
 (comparing to RNN and GRU, LSTM needs extra cell state c0)
 
+## 15_learning_rate_adjust
+Use pytorch to adjust learning rate to increase model performance
+
 ## Tutorial Reference
 [Youtube(Pytorch Tutorials-Complete Beginner Course) Author.Python Engineer](https://www.youtube.com/playlist?list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4)
